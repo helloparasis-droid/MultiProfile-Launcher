@@ -1,0 +1,8 @@
+PySide6>=6.6.0
+# pywin32 is used on Windows for Window Layout Manager (HWND tiling, DWM live thumbnails, global hotkeys)
+# and DPAPI master-key decryption fallback.
+pywin32>=306; sys_platform == "win32"
+# cryptography is required for AES-GCM decryption of Chromium Cookies (v10/v20).
+cryptography>=42.0.0
+# Optional — Web Checks tab (CDP browser automation for Snapp / Okala):
+playwright>=1.42.0
